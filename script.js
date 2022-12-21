@@ -64,11 +64,18 @@ let arrayGlobale = [
 ];
 function allconsolelog (bigData){
     for (let y=0 ; y < bigData.length; y++){
-        for  let x in bigData[y]{
-            console.log(x)
+
+        console.log("--------------------");
+        
+        for (let x in bigData[y]){
+
+            let Name = x.name;
+
+            console.log(bigData[y][`${x}`]);
+            
         }
     }
     
     console.log(bigData[1].name)
 }
-allconsolelog(arrayGlobale)
+allconsolelog(arrayGlobale);
